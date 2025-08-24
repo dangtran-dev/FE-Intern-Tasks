@@ -18,52 +18,55 @@
 
 ## Cách chạy ứng dụng
 
-cd Task1
-npm install
-npm run dev
+-   cd Task1
+-   npm install
+-   npm run dev
 
 ## Cấu trúc dự án
 
 Task1/
-│── node_modules/ # Thư viện cài đặt qua npm/yarn
-│── public/ # File tĩnh (favicon, ảnh, …)
-│
-│── src/
-│ │── App.tsx # Thành phần chính, render giao diện tổng thể
-│ │── index.css # File CSS gốc, import TailwindCSS
-│ │── main.tsx # Điểm khởi chạy ứng dụng React
-│ │── vite-env.d.ts # Khai báo type cho Vite
-│
-│ ├── components/
-│ │ └── ui/ # Các component UI được tái sử dụng
-│ │ ├── badge.tsx # Hiển thị nhãn nhỏ
-│ │ ├── button.tsx # Nút bấm tuỳ chỉnh
-│ │ ├── card.tsx # Thẻ (Card) chứa nội dung
-│ │ ├── DateRangeFilter.tsx # Bộ lọc theo khoảng ngày
-│ │ ├── Header.tsx # Header chính của ứng dụng
-│ │ ├── input.tsx # Input cơ bản
-│ │ ├── label.tsx # Nhãn cho input
-│ │ ├── ReportFileUploader.tsx # Upload file Excel (.xlsx)
-│ │ ├── RevenueCard.tsx # Hiển thị tổng doanh thu
-│ │ ├── TransactionCountCard.tsx # Hiển thị số lượng giao dịch
-│
-│ ├── lib/
-│ │ └── utils.ts # Hàm tiện ích cn để merge className
-│ │ # → Kết hợp clsx + tailwind-merge
-│
-│ ├── stores/ # State management với Zustand
-│ │ ├── useFileStore.ts # Lưu thông tin file import
-│ │ ├── useInvoiceFilter.ts # Lưu trạng thái filter dữ liệu hoá đơn
-│ │ ├── useInvoiceStore.ts # Lưu danh sách hoá đơn, dữ liệu báo cáo
-│
-│── .gitignore # Bỏ qua file/thư mục khi push Git
-│── components.json # Config cho Shadcn UI
-│── eslint.config.js # Cấu hình ESLint
-│── index.html # HTML template gốc
-│── package.json  
-│── package-lock.json  
-│── README.md # Tài liệu dự án
-│── tsconfig.json # Cấu hình TypeScript
-│── tsconfig.app.json  
-│── tsconfig.node.json  
-│── vite.config.ts # Cấu hình Vite
+
+-   node_modules/ # Thư viện cài đặt qua npm/yarn
+-   public/ # File tĩnh (favicon, ảnh, …)
+
+-   src/
+
+    -   App.tsx # Thành phần chính, render giao diện tổng thể
+    -   index.css # File CSS gốc, import TailwindCSS
+    -   main.tsx # Điểm khởi chạy ứng dụng React
+    -   vite-env.d.ts # Khai báo type cho Vite
+
+    -   components/
+
+        -   ui/ # Các component UI được tái sử dụng
+            -   badge.tsx # Hiển thị nhãn nhỏ
+            -   button.tsx # Nút bấm tuỳ chỉnh
+            -   card.tsx # Thẻ (Card) chứa nội dung
+            -   DateRangeFilter.tsx # Bộ lọc theo khoảng ngày
+            -   Header.tsx # Header chính của ứng dụng
+            -   input.tsx # Input cơ bản
+            -   label.tsx # Nhãn cho input
+            -   ReportFileUploader.tsx # Upload file Excel (.xlsx)
+            -   RevenueCard.tsx # Hiển thị tổng doanh thu
+            -   TransactionCountCard.tsx # Hiển thị số lượng giao dịch
+
+    -   lib/
+
+        -   utils.ts # Hàm tiện ích cn để merge className # → Kết hợp clsx + tailwind-merge
+
+    -   stores/ # State management với Zustand
+        -   useFileStore.ts # Lưu thông tin file import
+        -   useInvoiceFilter.ts # Lưu trạng thái filter dữ liệu hoá đơn
+        -   useInvoiceStore.ts # Lưu danh sách hoá đơn, dữ liệu báo cáo
+
+-   .gitignore # Bỏ qua file/thư mục khi push Git
+-   components.json # Config cho Shadcn UI
+-   eslint.config.js # Cấu hình ESLint
+-   index.html # HTML template gốc
+-   package.json
+-   package-lock.json
+-   README.md # Tài liệu dự án
+-   tsconfig.json # Cấu hình TypeScript
+-   tsconfig.app.json
+-   tsconfig.node.json
+-   vite.config.ts # Cấu hình Vite
