@@ -15,7 +15,7 @@ async function solve() {
         prefix1[i] = prefix1[i - 1] + data[i];
     }
 
-    // Prefix sum cho type 1
+    // Prefix sum cho type 2
     const prefix2 = new Array(n).fill(0);
     prefix2[0] = data[0];
     for (let i = 1; i < n; i++) {
